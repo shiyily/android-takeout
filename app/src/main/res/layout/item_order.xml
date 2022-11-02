@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_dish_pic_order"
+        android:scaleType="fitXY"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/tv_dish_name_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="口味蛇"
+            android:textSize="25sp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+            <TextView
+                android:id="@+id/tv_dish_count_order"
+                android:text="X1"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_total_money_order"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:text="￥168"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
